@@ -1,0 +1,13 @@
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/obj/Debug/netcoreapp3.0/WeatherConsole.csprojAssemblyReference.cache
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/obj/Debug/netcoreapp3.0/WeatherConsole.AssemblyInfoInputs.cache
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/obj/Debug/netcoreapp3.0/WeatherConsole.AssemblyInfo.cs
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/WeatherConsole
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/WeatherConsole.deps.json
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/WeatherConsole.runtimeconfig.json
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/WeatherConsole.runtimeconfig.dev.json
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/WeatherConsole.dll
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/WeatherConsole.pdb
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/obj/Debug/netcoreapp3.0/WeatherConsole.csproj.CopyComplete
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/obj/Debug/netcoreapp3.0/WeatherConsole.dll
+/Users/Mark/Projects/WeatherConsole/WeatherConsole/obj/Debug/netcoreapp3.0/WeatherConsole.pdb
