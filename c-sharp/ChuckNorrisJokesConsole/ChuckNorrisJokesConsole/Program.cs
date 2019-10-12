@@ -46,11 +46,11 @@ namespace ChuckNorrisJokesConsole
                 }
                 else
                 {
-                    Console.WriteLine("Chuck Norris doesn''t like Errors! " + chuckNorrisJokeJSON);
+                    Console.WriteLine("Chuck Norris doesn't like Errors! " + chuckNorrisJokeJSON);
                 }
             }
 
-            Console.WriteLine("Chuck Norris doesn''t like you stopping!");
+            Console.WriteLine("Chuck Norris doesn't like you stopping!");
 
         }
 
