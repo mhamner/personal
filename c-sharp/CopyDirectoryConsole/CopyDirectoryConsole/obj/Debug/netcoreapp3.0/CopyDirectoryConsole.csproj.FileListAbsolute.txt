@@ -1,0 +1,11 @@
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/bin/Debug/netcoreapp3.0/CopyDirectoryConsole
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/bin/Debug/netcoreapp3.0/CopyDirectoryConsole.deps.json
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/bin/Debug/netcoreapp3.0/CopyDirectoryConsole.runtimeconfig.json
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/bin/Debug/netcoreapp3.0/CopyDirectoryConsole.runtimeconfig.dev.json
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/bin/Debug/netcoreapp3.0/CopyDirectoryConsole.dll
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/bin/Debug/netcoreapp3.0/CopyDirectoryConsole.pdb
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/obj/Debug/netcoreapp3.0/CopyDirectoryConsole.csprojAssemblyReference.cache
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/obj/Debug/netcoreapp3.0/CopyDirectoryConsole.AssemblyInfoInputs.cache
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/obj/Debug/netcoreapp3.0/CopyDirectoryConsole.AssemblyInfo.cs
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/obj/Debug/netcoreapp3.0/CopyDirectoryConsole.dll
+/Users/Mark/Projects/CopyDirectoryConsole/CopyDirectoryConsole/obj/Debug/netcoreapp3.0/CopyDirectoryConsole.pdb
