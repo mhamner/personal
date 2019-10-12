@@ -1,0 +1,13 @@
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/obj/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.csprojAssemblyReference.cache
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/obj/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.AssemblyInfoInputs.cache
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/obj/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.AssemblyInfo.cs
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/ChuckNorrisJokesConsole
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.deps.json
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.runtimeconfig.json
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.runtimeconfig.dev.json
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.dll
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.pdb
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/bin/Debug/netcoreapp3.0/Newtonsoft.Json.dll
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/obj/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.csproj.CopyComplete
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/obj/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.dll
+/Users/Mark/Projects/ChuckNorrisJokesConsole/ChuckNorrisJokesConsole/obj/Debug/netcoreapp3.0/ChuckNorrisJokesConsole.pdb
