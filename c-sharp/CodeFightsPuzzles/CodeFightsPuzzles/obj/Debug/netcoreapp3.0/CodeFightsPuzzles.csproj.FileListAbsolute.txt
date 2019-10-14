@@ -1,0 +1,11 @@
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/bin/Debug/netcoreapp3.0/CodeFightsPuzzles
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/bin/Debug/netcoreapp3.0/CodeFightsPuzzles.deps.json
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/bin/Debug/netcoreapp3.0/CodeFightsPuzzles.runtimeconfig.json
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/bin/Debug/netcoreapp3.0/CodeFightsPuzzles.runtimeconfig.dev.json
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/bin/Debug/netcoreapp3.0/CodeFightsPuzzles.dll
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/bin/Debug/netcoreapp3.0/CodeFightsPuzzles.pdb
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/obj/Debug/netcoreapp3.0/CodeFightsPuzzles.csprojAssemblyReference.cache
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/obj/Debug/netcoreapp3.0/CodeFightsPuzzles.AssemblyInfoInputs.cache
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/obj/Debug/netcoreapp3.0/CodeFightsPuzzles.AssemblyInfo.cs
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/obj/Debug/netcoreapp3.0/CodeFightsPuzzles.dll
+/Users/Mark/Projects/CodeFightsPuzzles/CodeFightsPuzzles/obj/Debug/netcoreapp3.0/CodeFightsPuzzles.pdb
