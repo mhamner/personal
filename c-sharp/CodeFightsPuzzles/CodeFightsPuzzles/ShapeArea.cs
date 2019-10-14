@@ -40,5 +40,13 @@ namespace CodeFightsPuzzles
             return nMinusOneArea + squaresToAdd;
         }
 
+        public class InvalidNumberException : Exception
+        {
+            public InvalidNumberException(string message) : base(message)
+            {
+
+            }
+        }
+
     }
 }
