@@ -1,0 +1,22 @@
+﻿
+@model ChuckNorrisJokesMVC.Models.JokeModel
+
+@{
+    ViewData["Title"] = "Joke Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Heres your joke!</h1>
+    <br />
+    <i>Caution:  Some jokes contain adult humor</i>
+    <br />
+    <br />
+    <p>
+        <!-- "value" is the name of the field that contains the joke in our JokeModel.cs class -->
+        @Html.ValueFor(model => model.value)
+    </p>
+    <br />
+<input type="button" name="button" value="Another! Another!"
+           onclick="location.href='@Url.Action("JokePage","Joke")'" />
+</div>
+     

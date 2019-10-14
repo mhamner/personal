@@ -1,0 +1,70 @@
+﻿Here's in general how the MVC routing for this works:
+
+The routes are setup in Startup.cs, which is called first at runtime.  For example"
+
+endpoints.MapControllerRoute(
+                    name: "joke",
+                    pattern: "{controller=Joke}/{action=JokePage}/{id?}");
+
+This creates a route called joke to the controller JokeController.cs (MVC adds the "Controller" part onto it)
+and within JokeController.cs it calls the JokePage action method.
+
+public IActionResult JokePage()
+        {
+            return View();
+        }
+
+That then returns the View (whatever you add to the ViewBag, etc. to be shown by the actual cshtml page)
+and routes to the URL MVC constructs.
+
+The actual html page exists in the Views folder.  You need to have one sub-folder under Views for every Controller.
+Within that sub-folder, you put the actual .cshtml pages, etc.
+
+So, for example, calling the Joke controller with the JokePage action like this:
+
+    <input type="button" name="button" value="Take me to the jokes!"
+           onclick="location.href='@Url.Action("JokePage","Joke")'" />
+
+constructs this URL:
+
+https://localhost:5001/Joke/JokePage
+
+That's because, as mentioned above, the JokePage cshtml file is in the Joke folder under the Views folder
+
+So if you wanted another page and Controller, to, for example, show Weather, you'd do the following:
+
+1.  Create a WeatherController.cs file in the Controllers folder
+2.  Create a Weather folder under the Views folder
+3.  Create a WeatherDetails.cshtml Razor page under the Weather folder you just created
+4.  Go into Startup.cs and add a new route, like this:
+
+endpoints.MapControllerRoute(
+                    name: "weather",
+                    pattern: "{controller=Weather}/{action=WeatherDetails}/{id?}");
+
+5.  You can route directly to this new page from a different page like this (Note:  The Url.Action
+format is Action, Controller):
+
+ <input type="button" name="button" value="Show me the weather"
+           onclick="location.href='@Url.Action("WeatherDetals","Weather")'" />
+
+Our Models hold our data classes and our business logic.
+
+JokeModel.cs holds the data structure / class for our Joke
+
+Jokes.cs contains the methods that call the Chuck Norris Jokes API and uses Newtonsoft.Json to
+deserialize it into our JokeModel.cs class (via the GetJoke() method)
+
+Our JokeController creates an instance of the Jokes class and calls the GetJoke() method.  It then returns
+the instance of the Joke class, which now contains the API data, to the View
+
+BASIC FLOW:
+
+1.  [Startup.cs] --> [default route] --> [Index.cshtml] --> [User clicks button] -->
+2.  [Route to {controller=Joke}/{action=JokePage}/{id?}] --> [JokeController] -->
+3.  [JokeController calls Jokes.cs -> GetJoke which puts result in an instance of JokesModel] -->
+4.  [JokeController adds JokesModel object to View and returns it] -->
+5.  [JokeController routes to JokePage.cshtml] --> [JokePage.cshtml gets object from model] -->
+6.  [JokePage.cshtml displays object on page]
+7.  [User click "Another!"] --> Route to {controller=Joke}/{action=JokePage}/{id?}] --> Go back to 2
+

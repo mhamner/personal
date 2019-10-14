@@ -1,0 +1,17 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Chuck Norris Jokes</h1>
+    <!-- The button below will route you to the JokePage via the JokeController
+        The syntax for the Url.Action is (Action, Controller).
+        So the code below will take you to the JokePage action in the JokeController (MVC adds the "Controller" part)
+        That action will then construct the URL format to include JokePage (/Joke/JokePage)
+        which is in the Views folder -->
+    <input type="button" name="button" value="Take me to the jokes!"
+           onclick="location.href='@Url.Action("JokePage","Joke")'" />
+    <br />
+    <br />
+    <i>Caution:  Some jokes contain adult humor</i>
+</div>
