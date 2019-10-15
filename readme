@@ -1,1 +1,52 @@
-This is my personal GIT Repo.
+This is Mark Hamner's personal GIT Repo.  It contains some code examples and things I've done to demonstrate various
+concepts or just to have fun.
+
+Here's a brief rundown of what's here:
+
+mhamner/personal/c-sharp:  This folder contais examples codes in C# / .Net.  All applications are coded in .Net Core.
+Within the c-sharp folder, I have the following items:
+
+ChuckNorrisJokesConsole:
+This is a C# / .Net Core Console App that allows the user to view Chuck Norris Jokes.
+The jokes are retrieved via an API call and the joke itself is deserialized at the field level using
+Newtonsoft.Json.Linq.
+A brief caution:  A few of the jokes retrieved randomly from the API contain adult (and bad :) ) humor.
+
+ChuckNorrisJokesMVC:
+This is a C# / .Net Core Web Application developed using the Model View Controller (MVC) framework.
+The jokes are retrieved using the same API call as ChuckNorrisJokesConsole, however in this application I use
+Newtonsoft.Json to deserialize the JSON into a JokesModel class, which is then passed to the View and displayed 
+to the user.
+A brief caution:  A few of the jokes retrieved randomly from the API contain adult (and bad :) ) humor.
+
+CodeFightsPuzzles:
+This is a C# / .Net Core Console Application that demonstrates several code puzzles I completed on Code Fights.
+Code Fights (now Code Signal) is a website that allows you to keep your coding skills sharp by giving you 
+code puzzles of increasing difficulty, mainly centered around creating algorithms to do various things.
+What I did here is I took my Code Fights solutions and put them each in their own class within this app.  I then
+coded a quick little Console in the main program to allow the user to select the Puzzle to run and see the results.
+I also created a few Unit Tests for this stuff, just to demonstrate creating tests.
+It's fair to note that since these were challenges on Code Fights, you'll probably find solutions to these (some 
+likely cooler than mine :) ) all over the web.
+The following items are in here:
+  - AdjacentElementsProduct:  This allows the user to pass a comma-separated array of numbers (1,2,3,4,5....).  
+    The code will then determine the product (x*y) of each pair that are next to each other, and tell the user
+    what the highest result of that is.  For example, in the list 1,2,3,4,5, the answer would be 20, because 4*5
+    is the highest result.
+  - CheckPaindrome:  This allows the user to pass in a string and then code will tell them whether or not the string
+    is a palindrome (the same word backwards and forward, like bob, or racecar).
+  - ShapeArea:  This allows the user to pass in the number of sides of an n-interesting polygon (a polygon with sides
+    of length 1 that build in differnt shapes) and the code will determine the area of the polygon.
+    
+CopyDirectory Console:
+This is a C# / .Nt Core Console Application that allows the user to enter a From and To directory.  The application will
+then copy the contents of the From to the To, includiing all sub-directories.  This is a good example of using
+recursion.
+
+Weather Console:
+This is a C# / .Net Core Console Application that allows the user to enter a zip code.  The application will then call
+the Open Weather Map API to retrieve the current conditions, temperature, and city name for that zip.  It uses
+Newtsonsoft.Json.Linq to deserialize the desired fields.  It also displays the total contents of the returned JSON
+to the user.
+
+    
