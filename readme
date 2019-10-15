@@ -17,6 +17,8 @@ This is a C# / .Net Core Web Application developed using the Model View Controll
 The jokes are retrieved using the same API call as ChuckNorrisJokesConsole, however in this application I use
 Newtonsoft.Json to deserialize the JSON into a JokesModel class, which is then passed to the View and displayed 
 to the user.
+Note that the Razor pages (.cshtml) in this app are very basic, as this is more a demo of MVC and calling
+APIs and not really a UI demo.
 A brief caution:  A few of the jokes retrieved randomly from the API contain adult (and bad :) ) humor.
 
 CodeFightsPuzzles:
