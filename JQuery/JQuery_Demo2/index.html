@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JQuery Demo 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>JQuery Demo 2</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add User</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="email" id="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+        <input class="btn" id="btn1" type="button" value="Click me!">
+        <label id="msgArea">Hello there!</label> 
+      </form>    
+    </section>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function() 
+        {         
+            $("#email").html('User email:');
+            $("#email").html('<b>User email:</b>');
+            
+
+            //Demo doing something when the user clicks the button
+            $("#btn1").on('click', function()
+            {
+              $("#msgArea").html('You clicked the button.');          
+            });
+
+            //Demo slide toggling one of our fields when the user clicks the button
+            $("#btn1").on('click', function()
+            {
+              $("#email").slideToggle(3000);          
+            });
+        });
+    </script>
+  </body>
+</html>
