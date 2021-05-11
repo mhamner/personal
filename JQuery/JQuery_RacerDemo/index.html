@@ -20,8 +20,8 @@
           <input type="text" id="racer1" value="Racer 1">
           <table>
             <tr>
-              <td><label for="racer1Speed">Speed:</label></td>
-              <td><input type="text" id="racer1Speed" name="racer1Spd" value="5000"></td>
+              <td><label for="racer1Distance">Distance:</label></td>
+              <td><input type="text" id="racer1Distance" value="5000"></td>
             </tr>
           </table>
           <input class="btn" id="btnRacer1Go" type="button" value="Racer 1 Go!">
@@ -30,8 +30,8 @@
           <input type="text" id="racer2" value="Racer 2">
           <table>
             <tr>
-              <td><label for="racer2Speed">Speed:</label></td>
-              <td><input type="text" id="racer2Speed" value="5000"></td>
+              <td><label for="racer2Distance">Distance:</label></td>
+              <td><input type="text" id="racer2Distance" value="5000"></td>
             </tr>
           </table>
           <input class="btn" id="btnRacer2Go" type="button" value="Racer 2 Go!">
@@ -40,8 +40,8 @@
           <input type="text" id="racer3" value="Racer 3">
           <table>
             <tr>
-              <td><label for="racer3Speed">Speed:</label></td>
-              <td><input type="text" id="racer3Speed" value="5000"></td>
+              <td><label for="racer3Distance">Distance:</label></td>
+              <td><input type="text" id="racer3Distance" value="5000"></td>
             </tr>
           </table>
           <input class="btn" id="btnRacer3Go" type="button" value="Racer 3 Go!">
@@ -58,17 +58,17 @@
         {                              
             $("#btnRacer1Go").on('click', function()
             {                     
-              $("#racer1").css({background: 'red'}).hide(parseInt($("#racer1Speed").val()));                   
+              $("#racer1").css({background: 'red'}).hide(parseInt($("#racer1Distance").val()));                   
             });
 
             $("#btnRacer2Go").on('click', function()
             {
-              $("#racer2").css({background: 'blue'}).hide(parseInt($("#racer2Speed").val()));            
+              $("#racer2").css({background: 'blue'}).hide(parseInt($("#racer2Distance").val()));            
             });
 
             $("#btnRacer3Go").on('click', function()
             {
-              $("#racer3").css({background: 'green'}).hide(parseInt($("#racer3Speed").val()));            
+              $("#racer3").css({background: 'green'}).hide(parseInt($("#racer3Distance").val()));            
             });
 
             $("#btnAllGo").on('click', function()
