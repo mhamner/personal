@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JQuery Racer Assignment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>JQuery Racer Assignment</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Let's Race!</h1>
+        <div class="msg"></div>
+        <div>
+          <input type="text" id="racer1" value="Racer 1">
+          <table>
+            <tr>
+              <td><label for="racer1Speed">Speed:</label></td>
+              <td><input type="text" id="racer1Speed" name="racer1Spd" value="5000"></td>
+            </tr>
+          </table>
+          <input class="btn" id="btnRacer1Go" type="button" value="Racer 1 Go!">
+        </div>
+        <div>
+          <input type="text" id="racer2" value="Racer 2">
+          <table>
+            <tr>
+              <td><label for="racer2Speed">Speed:</label></td>
+              <td><input type="text" id="racer2Speed" value="5000"></td>
+            </tr>
+          </table>
+          <input class="btn" id="btnRacer2Go" type="button" value="Racer 2 Go!">
+        </div>
+        <div>
+          <input type="text" id="racer3" value="Racer 3">
+          <table>
+            <tr>
+              <td><label for="racer3Speed">Speed:</label></td>
+              <td><input type="text" id="racer3Speed" value="5000"></td>
+            </tr>
+          </table>
+          <input class="btn" id="btnRacer3Go" type="button" value="Racer 3 Go!">
+        </div>
+        <label id="msgArea">Ready to Race!</label> 
+        <input class="btn" id="btnAllGo" type="button" value="ALL RACERS GO!">
+      </form>    
+    </section>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function() 
+        {                              
+            $("#btnRacer1Go").on('click', function()
+            {                     
+              $("#racer1").css({background: 'red'}).hide(parseInt($("#racer1Speed").val()));                   
+            });
+
+            $("#btnRacer2Go").on('click', function()
+            {
+              $("#racer2").css({background: 'blue'}).hide(parseInt($("#racer2Speed").val()));            
+            });
+
+            $("#btnRacer3Go").on('click', function()
+            {
+              $("#racer3").css({background: 'green'}).hide(parseInt($("#racer3Speed").val()));            
+            });
+
+            $("#btnAllGo").on('click', function()
+            {
+              $("#btnRacer1Go").click();          
+              $("#btnRacer2Go").click();          
+              $("#btnRacer3Go").click();          
+            });
+
+            
+        });
+    </script>
+  </body>
+</html>
