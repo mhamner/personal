@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Piano Assignment</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>Piano Assignment</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <table>
+          <tr>
+          <div style="float:left;height:500px;width:100px;border:1px solid #000;" id="key1"></div>
+          </tr>
+          <tr>
+            <div style="float:left;height:500px;width:100px;border:1px solid #000;" id="key2"></div>
+          </tr>
+          <tr>
+            <div style="float:left;height:500px;width:100px;border:1px solid #000;" id="key3"></div>
+          </tr> 
+        </table>
+      </form>
+    </section>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>     
+        $(function() 
+        {    
+          //Press the keys after an increasing timeout - since JS runs asychronously, we increase the timeout before each keypress 
+          //  so that the keys appear pressed in order, and not all at once.      
+          pressKey3();
+          setTimeout(pressKey2,1000);  
+          setTimeout(pressKey1,2000);
+          setTimeout(pressKey2,3000);       
+          setTimeout(pressKey3,4000);            
+          setTimeout(pressKey3,5500);   //Leave a little extra delay before pressing the same key in a row so users can see a bit of space between the presses 
+          setTimeout(pressKey3,7000);  
+          setTimeout(pressKey2,9000);        
+          setTimeout(pressKey2,10500);               
+          setTimeout(pressKey2,12000);   
+          setTimeout(pressKey3,13000);       
+          setTimeout(pressKey3,14500);                
+          setTimeout(pressKey3,16000);            
+          setTimeout(pressKey3,17500);   
+          setTimeout(pressKey2,18500);   
+          setTimeout(pressKey1,19500);
+          setTimeout(pressKey2,20500);
+          setTimeout(pressKey3,21500);   
+          setTimeout(pressKey3,23000);   
+          setTimeout(pressKey3,24500);  
+          setTimeout(pressKey2,25500);
+          setTimeout(pressKey3,26500);  
+          setTimeout(pressKey3,28000);
+          setTimeout(pressKey3,29500);
+          setTimeout(pressKey2,30500);
+          setTimeout(pressKey1,31500);         
+           
+          function pressKey3()
+          {
+            $("#key3").css({background:'grey'}).delay(800).queue(function(next)
+            {
+              $(this).css({background:'white'});
+              next();
+            });           
+          }
+
+          function pressKey2()
+          {
+            $("#key2").css({background:'grey'}).delay(800).queue(function(next)
+            {
+              $(this).css({background:'white'});
+              next();
+            });           
+          }
+
+          function pressKey1()
+          {
+            $("#key1").css({background:'grey'}).delay(800).queue(function(next)
+            {
+              $(this).css({background:'white'});
+              next();
+            });          
+          }
+                    
+        });
+
+
+
+    </script>
+  </body>
+</html>
