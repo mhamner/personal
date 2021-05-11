@@ -25,6 +25,10 @@
           <input type="text" id="email">
         </div>
         <input class="btn" id="btn1" type="button" value="Click me!">
+        <button id="btn2" type="button" class="btn" data-button-id="button2">No, click me!</button>
+        <button type="button" class="btn" data-button-id="button1">One</button>
+        <button type="button" class="btn" data-button-id="button2">Two</button>
+        <button type="button" class="btn" data-button-id="button3">Three</button>
         <label id="msgArea">Hello there!</label> 
       </form>    
     </section>
@@ -48,6 +52,23 @@
             $("#btn1").on('click', function()
             {
               $("#email").slideToggle(3000);          
+            });
+
+            //Demo using "this."
+            $("#btn1").on('mouseover', function()
+            {             
+              $(this).hide(2000);
+              $("button[data-button-id=button2]", function()
+              {
+                alert("Found it!");
+              })
+            });
+
+            //Demo one function for multiple buttons using custom attributes and "this."
+            $(".btn").on('click', function()
+            {
+              var buttonId = $(this).attr('data-button-id');
+              alert(buttonId);
             });
         });
     </script>
