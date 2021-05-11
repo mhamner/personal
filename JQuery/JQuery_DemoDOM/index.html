@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JQuery Demo 2</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <header>
+      <h1>JQuery Demo 2</h1>
+    </header>
+
+    <section class="container">
+      <form id="my-form">
+        <h1>Add User</h1>
+        <div class="msg"></div>
+        <div>
+          <label for="name">Name:</label>
+          <input type="text" id="name">
+        </div>
+        <div>
+          <label for="email" id="email">Email:</label>
+          <input type="text" id="email">
+        </div>
+        <input class="btn" id="btn1" type="button" value="Remove Special Class">
+        
+        <label id="msgArea">Hello there!</label> 
+      </form>    
+    </section>
+
+    <ul class="list">
+      <li>one</li>
+      <li>two</li>
+      <li>three</li>
+    </ul>
+
+    <ul class="list">
+      <li>Uno</li>
+      <li>Dos</li>
+      <li>Tres</li>
+      <li>
+        <ul class="sublist">
+          <li>Cautro</li>
+          <li>Cinco</li>
+          <li>Seis</li>
+        </ul>
+      </li>
+    </ul>
+
+    <script src="jquery-3.6.0.js"></script>
+
+    <script>
+        $(document).ready(function() 
+        {
+
+          $('li').on('click', function()
+          {
+            //$(this).next().fadeToggle();
+            //$(this).addClass('special');
+            //$(this).closest('.list').addClass('special');
+            if($(this).is('.special'))
+            {
+              alert('special');
+            }
+      
+          });      
+          
+          //Demo finding the first li and adding the 'special' CSS class to it
+          $('.list').on('click', function()
+          {
+            $(this).find('li').filter(':first').addClass('special');
+          });
+
+          //Demo finding all elements in the list with the 'special' CSS class and removing the class, making it normal again
+          $("#btn1").on('click', function()
+          {
+            $(".list").find('.special').removeClass();
+          });
+
+          //Demo hiding li's IF they are in the sublist, but not if they are in the main list
+          $('li').on('click', function()
+          {
+            if($(this).parent().is('.sublist'))
+            {
+              $(this).hide();
+            }
+          });
+
+          
+
+            
+        });
+    </script>
+  </body>
+</html>
